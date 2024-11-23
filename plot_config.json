@@ -1,0 +1,59 @@
+{
+  "data_file": "lid_driven.csv",  // 数据文件,clipboard为从剪贴板读取
+  "out_file": "方腔驱动.svg",  // 输出文件
+  "fig_size": [10, 6],  //单位cm
+  "font_size": 10.5,  //默认文字大小，pt
+  "x_axis": {
+    "label": "Velocity(m/s)",
+    "lim": [-0.4, 1], // 坐标范围，还可以设置为auto
+    "start_tick": -0.4, // 刻度线起始，还可以设置为auto
+    "step": 0.2, // 刻度线间隔，还可以设置为auto
+    "format": "%.1f" // 刻度线格式
+    //"pad": 2,         // 刻度线与坐标轴的距离偏移
+    //"font_size": 14 // 刻度线字体大小
+    //"tick_label": ["0", "1"] // 刻度线自定义标签
+  },
+  "y_axis": {
+    "label": "Y(m)",  //支持LaTeX，例如"$\\mathrm{(m^2)}$"
+    "lim": [0, 1], // 坐标范围，还可以设置为auto
+    "start_tick": 0, // 刻度线起始，还可以设置为auto
+    "step": 0.2, // 刻度线间隔，还可以设置为auto
+    "format": "%.1f"  // 刻度线格式
+    //"pad": 2,         // 刻度线与坐标轴的距离偏移
+    //"font_size": 14 // 刻度线字体大小
+    //"tick_label": ["0", "1"] // 刻度线自定义标签
+  },
+
+  "data_columns": {
+    "lables": "auto",  //["col1", "col2", "col3"],  // 列名, 也可以设置为"auto"，在文件有列名时使用列名，没有时按照序号生成列名
+    "x_column_indices": [0, 2, 4, 6, 8], //x轴数据的列索引
+    "y_column_indices": [1, 3, 5, 7, 9]  //y轴数据的列索引
+  },
+
+  "legend": {
+    "loc": "lower right",
+    "ncol": 1,
+    "visible": true,
+    "font_size": 6, // 刻度线字体大小
+    //"anchor": [0.23, 1.2], // 图例位置，左下角为0，0，右上角为1，1
+    "frame": {
+      "visible": false,
+      "edgecolor": "black",
+      "linestyle": "solid",
+      "facecolor": "white",
+      "framealpha": 1.0, // 透明度
+      "linewidth": 1.0, // 边框线宽
+      "rounded": 0 // 圆角
+    }
+  },
+
+  "data_styles":{
+    "colors": ["blue", "red", "green", "orange", "purple", "brown", "pink", "gray", "olive", "cyan"],
+    "linestyles": ["none", "--", "-.", ":", "-"],
+    "linewidths": [0.5, 0.5, 0.5, 0.5, 0.5],
+    "markers": ["o","none","none","none","none","none","o", "x", "s", "d", "^", "v", "<", ">", "p", "*"],
+    "markersizes": [3.0, 3.0, 3.0, 3.0, 3.0],
+    "markeredgewidth": [0.5, 0.5, 0.5, 0.5, 0.5],
+    "markerfacecolor": ["none", "red", "green", "orange", "purple", "brown", "pink", "gray", "olive", "cyan"]
+  }
+}
