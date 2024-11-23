@@ -2,6 +2,8 @@
 
 读取json配置绘制曲线图
 
+![项目示例](https://github.com/Littlestar007/SciPlotByJson/blob/main/%E6%96%B9%E8%85%94%E9%A9%B1%E5%8A%A8.svg)
+
 ## 前置库
 
 `pip install matplotlib numpy pandas fitz`
